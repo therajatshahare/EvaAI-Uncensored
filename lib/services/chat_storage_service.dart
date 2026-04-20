@@ -78,7 +78,7 @@ class ChatStorageService extends GetxService {
   set lastModelId(String value) => _settingsBox.put('last_model_id', value);
 
   bool get localApiServerEnabled =>
-      _settingsBox.get('local_api_server_enabled', defaultValue: true) as bool;
+      _settingsBox.get('local_api_server_enabled', defaultValue: false) as bool;
 
   set localApiServerEnabled(bool value) =>
       _settingsBox.put('local_api_server_enabled', value);

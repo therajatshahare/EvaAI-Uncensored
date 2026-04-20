@@ -115,7 +115,18 @@ class LlmService extends GetxService {
         return;
       }
 
-      await _engine!.loadModel(path);
+      // Exclusively use CPU backend to strictly avoid any driver-level GPU init hangs.
+      // Optimize threads: 4 for both generation and batch processing to keep memory stable.
+      // Lower contextSize to 2048 to prevent Android Low Memory Killer (LMK) from silently killing the app.
+      final params = ModelParams(
+        contextSize: 2048,
+        gpuLayers: 0, 
+        preferredBackend: GpuBackend.cpu,
+        numberOfThreads: Platform.numberOfProcessors > 4 ? 4 : 0, 
+        numberOfThreadsBatch: Platform.numberOfProcessors > 4 ? 4 : 0,
+      );
+
+      await _engine!.loadModel(path, modelParams: params);
       progressTimer.cancel();
 
       if (_loadingCancelled) {
