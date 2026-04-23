@@ -29,13 +29,13 @@ No API keys. No subscriptions. No content restrictions. Your conversations never
 
 ## Download
 
-### Android APK — Latest Release (v1.0.0)
+### Android APK — Latest Release (v2.0.0)
 
 | APK | Architecture | Best For | Size |
 |-----|-------------|----------|------|
-| [**app-arm64-v8a-release.apk**](https://github.com/techjarves/Uncensored-Local-AI-Multiplatform/releases/download/v1.0.0/app-arm64-v8a-release.apk) | ARM 64-bit | **Most phones (2018+)** | ~62 MB |
-| [**app-armeabi-v7a-release.apk**](https://github.com/techjarves/Uncensored-Local-AI-Multiplatform/releases/download/v1.0.0/app-armeabi-v7a-release.apk) | ARM 32-bit | Older/budget phones | ~16 MB |
-| [**app-x86_64-release.apk**](https://github.com/techjarves/Uncensored-Local-AI-Multiplatform/releases/download/v1.0.0/app-x86_64-release.apk) | x86 64-bit | Emulators / ChromeOS | ~55 MB |
+| [**app-arm64-v8a-release.apk**](https://github.com/techjarves/Uncensored-Local-AI-Multiplatform/releases/download/v2.0.0/app-arm64-v8a-release.apk) | ARM 64-bit | **Most phones (2018+)** | ~65 MB |
+| [**app-armeabi-v7a-release.apk**](https://github.com/techjarves/Uncensored-Local-AI-Multiplatform/releases/download/v2.0.0/app-armeabi-v7a-release.apk) | ARM 32-bit | Older/budget phones | ~18 MB |
+| [**app-x86_64-release.apk**](https://github.com/techjarves/Uncensored-Local-AI-Multiplatform/releases/download/v2.0.0/app-x86_64-release.apk) | x86 64-bit | Emulators / ChromeOS | ~58 MB |
 
 > **Not sure which to pick?** Download `arm64-v8a` — it works on virtually all modern Android phones.
 
