@@ -395,8 +395,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildMobileChatTab() {
     return Column(
       children: [
-        // Mobile top bar — minimal
-        _buildMobileTopBar(),
+        // Mobile top bar — minimal with SafeArea for status bar
+        SafeArea(
+          bottom: false,
+          child: _buildMobileTopBar(),
+        ),
         // Model loading progress banner
         Obx(() {
           if (!_modelCtrl.isLoadingModel.value) return const SizedBox.shrink();
